@@ -4,6 +4,10 @@ const toggle = document.getElementById("toggle");
 const refresh = document.getElementById("refresh");
 const theme = window.localStorage.getItem("theme");
 
+const rootStyles = getComputedStyle(document.documentElement);
+const bgColorLight = rootStyles.getPropertyValue("--bg-grey-light");
+const textColorDark = rootStyles.getPropertyValue("--text-dark");
+
 if (theme === "dark") {
     document.body.classList.add("dark");
 }
@@ -14,7 +18,10 @@ toggle.addEventListener("click", () => {
     window.localStorage.setItem("theme", newTheme);
 });
 
-// Refresh the pages
+// Atualiza a página
 refresh.addEventListener("click", () => {
     location.reload();
 });
+
+document.body.style.backgroundColor = bgColorLight;
+document.body.style.color = textColorDark;
