@@ -1,4 +1,4 @@
-// script.js
+// colors.js
 
 const toggle = document.getElementById("toggle");
 const refresh = document.getElementById("refresh");
