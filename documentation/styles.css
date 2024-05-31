@@ -1,0 +1,32 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #1685dbcf;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+body.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+button.dark-theme {
+    background-color: #001f3f;
+}
